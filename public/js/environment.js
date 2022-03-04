@@ -1,7 +1,7 @@
 let myMesh;
 let meshCone = [];
 let t;
-const total = 10;
+const total = 40;
 
 function createEnvironment(scene) {
   console.log("Adding environment");
@@ -24,8 +24,8 @@ function createEnvironment(scene) {
 
   for(let i = 0; i < total; i ++){
     meshCone[i] = new THREE.Mesh( geometry, material );
-    t = i*10
-    meshCone[i].position.set(j,2,t/5);
+    t = i*15
+    meshCone[i].position.set(j*2.5,1.25,t/6);
 
   
   scene.add( meshCone[i]);
@@ -35,12 +35,13 @@ function createEnvironment(scene) {
 // meshCone[51] = new THREE.Mesh( geometry, material );
 // meshCone[51].position.set(100,2,100);
 // scene.add( meshCone[51]);
-for(let j = 25; j < total+25; j ++){
+for(let j = 2.5; j < total +2.5; j ++){
 
   for(let i = 0; i < total; i ++){
     meshCone[i] = new THREE.Mesh( geometry, material );
-    t = i*10
-    meshCone[i].position.set(j,2,t/5);
+    t = i*15
+    meshCone[i].position.set(j*2.5,5,t/6);
+    meshCone[i].rotateX( Math.PI);
 
   
   scene.add( meshCone[i]);
