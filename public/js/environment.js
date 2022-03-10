@@ -35,9 +35,9 @@ function createEnvironment(scene) {
 // meshCone[51] = new THREE.Mesh( geometry, material );
 // meshCone[51].position.set(100,2,100);
 // scene.add( meshCone[51]);
-for(let j = .5; j < total; j ++){
+for(let j = -.5; j < total; j ++){
 
-  for(let i = 1; i < total; i ++){
+  for(let i = 0; i < total; i ++){
     meshCone[i] = new THREE.Mesh( geometry, material );
     t = i*15
     meshCone[i].position.set(j*2.5,5,t/6);
@@ -59,9 +59,9 @@ for(let j = 0; j < total; j ++){
   }
 }
 
-for(let j = .5; j < total; j ++){
+for(let j = -.5; j < total; j ++){
 
-  for(let i = 1; i < total; i ++){
+  for(let i = 0; i < total; i ++){
     meshCone[i] = new THREE.Mesh( geometry, material );
     t = i*-15
     meshCone[i].position.set(j*2.5 ,5,t/6);
