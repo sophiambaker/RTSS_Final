@@ -26,7 +26,8 @@ class Scene {
       0.1,
       5000
     );
-    this.camera.position.set(0, 3, 6);
+    this.camera.position.set(-10, 4, 6);
+    this.camera.rotateY((Math.PI/2)+3);
     this.scene.add(this.camera);
 
     // create an AudioListener and add it to the camera
